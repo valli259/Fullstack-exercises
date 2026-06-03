@@ -6,7 +6,7 @@
 activate server
 server-->>browser: HTTP status code 302: URL redirect
 Note left of server: server asks browser <br> to perform new HTTP GET request to /notes
-Note right of browser: browser reloads notes page, which causes 3 GET requests:
+Note right of browser: browser reloads notes page,<br> which causes 3 GET requests:
 
  browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
