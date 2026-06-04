@@ -2,7 +2,7 @@
   sequenceDiagram
     participant browser
     participant server
-Note right of browser: Submitting the form sends an HTTP POST <br> request to "/new_note", as this is<br> defined in the attributes of the form tag
+Note right of browser: Submitting the form sends an <br>HTTP POST request to "/new_note"
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     server-->>browser: HTTP status code 302: URL redirect
