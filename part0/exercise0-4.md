@@ -5,7 +5,7 @@
 Note right of browser: Submitting the form sends an <br>HTTP POST request to "/new_note"
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-Note right of server: Server receives data as body of POST request,<br> accesses it through req.body.note and creates new <br>note object from it and adds it to array of notes
+Note right of server: Server receives data as body of POST request,<br> accesses it through req.body.note, creates new <br>note object from it and adds it to array of notes
     server-->>browser: HTTP status code 302: URL redirect
     deactivate server
     Note left of server: server asks browser <br> to perform new HTTP GET request to /notes
